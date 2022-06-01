@@ -64,9 +64,11 @@
         <section class="filter-card">
             <form class="catralog-filter" action="#" method="get">
 
-                <fieldset class="catalog-filter-group">
-                    <legend class="catalog-filter-title">Сортировка</legend>
-                </fieldset>
+              <select class="select-control" aria-label="Сортировка">
+                <option value="popular">по популярности</option>
+                <option value="cheap">сначала дешёвое</option>
+                <option value="expensive">сначала дорогое</option>
+              </select>
         
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Цена</legend>
@@ -74,14 +76,81 @@
 
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Жирность</legend>
+                    <ul>
+                      <li>
+                        <label class="control">
+                          <input class="control-input" type="radio" name="fat_content" value="0_pro">
+                          0 %
+                        </label>
+                      </li>
+                      <li>
+                      <label class="control">
+                        <input class="control-input" type="radio" name="fat_content" value="10_pro">
+                        до 10 %
+                      </label>
+                      </li>
+                      <li>
+                        <label class="control">
+                          <input class="control-input" type="radio" name="fat_content" value="30_pro">
+                          до 30 %
+                        </label>
+                      </li>
+                      <li>
+                        <label class="control">
+                          <input class="control-input" type="radio" name="fat_content" value="more_30_pro">
+                          больше 30 %
+                        </label>
+                      </li>
+                    </ul>  
                 </fieldset>
 
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Наполнители</legend>
+                    <ul>
+                      <li>
+                        <label class="control">
+                          <input class="control-input" type="checkbox" name="chocolate">
+                          Шоколадные
+                        </label>
+                      </li>
+                      <li>
+                      <label class="control">
+                        <input class="control-input" type="checkbox" name="sugar">
+                        Сахарные посыпки
+                      </label>
+                      </li>
+                      <li>
+                        <label class="control">
+                          <input class="control-input" type="checkbox" name="fruit">
+                          Фрукты
+                        </label>
+                      </li>
+                      <li>
+                        <label class="control">
+                          <input class="control-input" type="checkbox" name="syrups">
+                          Сиропы
+                        </label>
+                      </li>
+                      <li>
+                        <label class="control">
+                          <input class="control-input" type="checkbox" name="jams">
+                          Джемы
+                        </label>
+                      </li>
+                    </ul>  
                 </fieldset>
         
                 <button class="button" type="submit">Применить</button>
             </form>
+            <div class="product-card">
+              <a class="product-card-link" href="product.html">
+                <img class="product-card-image" src="/img/malinka.png" alt="">
+                <h3 class="product-card-title">Малинка</h3>
+              </a>
+              <p>Сливочное мороженое с малиновым джемом</p>
+              <b class="product-card-price">310 ₽/кг</b>
+              <a class="product-card-button button" href="#">Купить</a>
+            </div>
         </section>
       </main>
 
