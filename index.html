@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link rel="stylesheet" href="tyles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -56,61 +56,60 @@
 
 <!--Ice-cream section-->
 <main class="index-main">
-<section class="ice-cream">
-  <div class="container">
-    <h1 class="visually-hidden">Нежный пломбир с клубничным джемом</h1>
-    <p>Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
-    <button>Заказать</button>
-  </div>
-</section>
+  <section class="ice-cream">
+    <div class="first_text">
+      <h1 class="heading">Нежный пломбир<br>с клубничным джемом</h1>
+      <p>Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
+      <button>Заказать</button>
+    </div>
+  </section>
 
-<section class="carousel">
-  <button class="arrow arrow-back" type="button">Назад</button>
-  <ul class="card-list">
-    <li class="card">
-      <img class="image" src="img/ice_cream.png" alt="Розовое мороженное" width="306" height="507">
-    </li>
-    <li class="card current">
-      <img class="image" src="img/ice-cream2.png" alt="желтое мороженое" width="66" height="150">
-    </li>
-    <li class="card">
-      <img class="image" src="img/ice-cream 3.png" alt="светлое мороженное" width="66" height="150">
-    </li>
-  </ul>
-    <button class="slider-button slider-prev" type="button">
-    <span class="visually-hidden">Предыдущее фото</span>
-  </button>
-  <button class="slider-button slider-next" type="button">
-    <span class="visually-hidden">Следующее фото</span>
-  </button>
-  <input type="radio" id="btn-1" name="toggle" checked>
-  <input type="radio" id="btn-2" name="toggle">
-  <input type="radio" id="btn-3" name="toggle">
-  <div class="slider-controls">
-    <label for="btn-1"></label>
-    <label for="btn-2"></label>
-    <label for="btn-3"></label>
+  <section class="carousel">
+    <ul class="card-list">
+      <li class="card">
+        <img class="image" src="img/ice_cream.png" alt="Розовое мороженное" width="306" height="507">
+      </li>
+      <li class="card current">
+        <img class="image" src="img/ice-cream2.png" alt="желтое мороженое" width="66" height="150">
+      </li>
+      <li class="card">
+        <img class="image" src="img/ice-cream 3.png" alt="светлое мороженное" width="66" height="150">
+      </li>
+    </ul>
+      <button class="slider-button slider-prev" type="button">
+      <span class="visually-hidden">Предыдущее фото</span>
+    </button>
+    <button class="slider-button slider-next" type="button">
+      <span class="visually-hidden">Следующее фото</span>
+    </button>
+    <input type="radio" id="btn-1" name="toggle" checked>
+    <input type="radio" id="btn-2" name="toggle">
+    <input type="radio" id="btn-3" name="toggle">
+    <div class="slider-controls">
+      <label for="btn-1"></label>
+      <label for="btn-2"></label>
+      <label for="btn-3"></label>
+    </div>
+  </section>
+  <div class="carousel-contact">
+    <ul>
+      <li>
+        <a href="https://t.me/htmlacademy" title="Наш телеграмм">
+          <img src="img/telegram.svg" alt="telegram" width="24" height="24">
+        </a>
+      </li>
+      <li>  
+        <a href="https://vk.com/htmlacademy">
+            <img src="img/vk.svg" alt="VK" width="24" height="24">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/user/html">
+          <img src="img/youtube.svg" alt="youTube" width="24" height="24">
+        </a>
+      </li>
+    </ul>
   </div>
-</section>
-<div class="carousel-contact">
-  <ul>
-    <li>
-      <a href="https://t.me/htmlacademy" title="Наш телеграмм">
-        <img src="img/telegram.svg" alt="telegram" width="24" height="24">
-      </a>
-    </li>
-    <li>  
-      <a href="https://vk.com/htmlacademy">
-          <img src="img/vk.svg" alt="VK" width="24" height="24">
-      </a>
-    </li>
-    <li>
-      <a href="https://www.youtube.com/user/html">
-        <img src="img/youtube.svg" alt="youTube" width="24" height="24">
-      </a>
-    </li>
-  </ul>
-</div>
 </main>
 
 
@@ -200,20 +199,21 @@
 </section>
 
 <!--10 способов...-->
-<article class="aside">
-  <img src="img/Новости.png" alt="фон для новостей" width="570" height="224">
-  <p>Новое в нашем блоге</p>
-  <h3>10 способов сервировки фруктовых щербетов
-    к столу</h3>
-</article>
+<div class="news">
+  <article class="aside">
+    <p>Новое в нашем блоге</p>
+    <h3>10 способов сервировки фруктовых щербетов
+      к столу</h3>
+  </article>
 
-<!--второе окно справа-->
-<section class="subscription">
-  <p>Подпишитесь на нашу сладкую рассылку и будьте всегда
-    в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-    <input type="email"  placeholder="email@example.com">
-    <button class="btn" type="submit">отправить</button>
-</section>
+  <!--второе окно справа-->
+  <section class="subscription">
+    <p>Подпишитесь на нашу сладкую рассылку и будьте всегда
+      в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+      <input type="email"  placeholder="email@example.com">
+      <button class="btn" type="submit">отправить</button>
+  </section>
+</div>
 
 <!--Доставка любимого мороженного-->
 
