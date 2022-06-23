@@ -32,6 +32,8 @@ html, body{
     margin: auto;
 }
 
+
+*{outline: 1px solid red;}
 body {
     margin: 0;
     display: flex;
@@ -41,6 +43,17 @@ body {
     color: #2D3440;
     line-height: 24px;
     background-color: #FEAFC3;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .page-header {
@@ -65,7 +78,15 @@ body {
     text-transform: uppercase;
 }
 
+.navbar-brend{
+    width: 137px;
+    margin-right: 100px;
+}
+
+
 .navigation-link {
+    display: block;
+    padding: 24px 19px;
     font-family: "Inter", sans-serif;
     line-height: 20px;
     font-weight: 400;
@@ -73,12 +94,16 @@ body {
     color: #2D3440;
     background-color: #FEAFC3;
     text-decoration: none;
+
 }
 
 .navigation-list {
+    display: flex;
     width: 400px;
     margin: 0;
     padding: 0;
+    list-style-type: none;
+
 }
 
 .navigation-user{
@@ -86,9 +111,18 @@ body {
     margin-left: auto;
 }
 
+.navigation-user .navigation-link {
+    min-width: 16px;
+    min-height: 22px;
+}
+
 .ice-cream-corusel {
     display: block;
     margin: 0 auto;
+}
+
+.advantages{
+    margin-bottom: 81px;
 }
 
 .advantages-list{
@@ -97,17 +131,30 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    list-style-type: none ;
 }
 .advantages-item{
     width: 570px;
 }
 
+/* Title */
+.advantages-title {
+    margin-top: 0;
+    margin-bottom: 28px;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
 .main-container{
     flex-grow: 1;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .contacts-phone {
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-weight: Bold;
     text-align: left;
     color: #2D3440; 
@@ -169,4 +216,32 @@ button {
 .image{
     display: flex;
     justify-content: flex-end;
+}
+
+.page-footer{
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.footer-contact{
+    width: 200px;
+    margin-right: 130px;
+}
+
+.footer_block_group{
+    width: 350px;
+    margin: auto;
+}
+
+.catalog-products{
+    display: flex;
+}
+
+.catalog-filter{
+    width: 900px;
+    margin-right: 435px;
+}
+
+.catalog-menu{
 }
