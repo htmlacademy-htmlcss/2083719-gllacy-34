@@ -1,0 +1,417 @@
+
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/inter-400.woff2) format("woff2");
+    font-style: Black;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/inter-700.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/inter-900.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+}
+
+html {
+    height: 100%;
+}
+
+html, body{
+    width: 1170px;
+    margin: auto;
+}
+
+
+*{outline: 1px solid red;}
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: 'Inter', sans-serif;
+    color: #2D3440;
+    line-height: 24px;
+    background-color: #FEAFC3;
+}
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.page-header {
+    color: #2D3440;
+    margin-top: 24px;
+    background-color: #FEAFC3;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+.navigation{
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.navbar-brend{
+  width: 137px;
+  margin-right: 100px;
+}
+
+
+.navigation-link {
+  display: block;
+  margin: 0;
+  list-style: none;
+  padding: 24px 19px;
+}
+
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 420px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+}
+
+.navigation-user{
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: flex-end;
+  margin-left: 10px;
+}
+
+.navigation-user .navigation-link {
+  min-width: 16px;
+  min-height: 22px;
+}
+
+.page-cotainer{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.ice-cream-corusel{
+  display: flex;
+  margin: 0 auto;
+  }
+
+
+.heading{
+  width: 470px;
+  margin-top: 136px;
+  margin-left: 70px;
+  margin-right: 21;
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: left;
+  }
+
+.subtitle{
+  width: 414px;
+  margin-top: 24px;
+  margin-left: 70px;
+  margin-right: 77px;
+  }
+
+
+.carousel{
+  display: flex;
+  margin-left: 31px;
+  margin-top: 64px;
+  width: 306px;
+  height: 507px;
+}
+
+.card-list{
+  display: block;
+  list-style-type: none;
+  width: 609px;
+  height: 507px;
+}
+
+.image{
+  display: flex;
+
+}
+
+.carousel-contact{
+  display: flex;
+  margin-left: 200px;
+  margin-top: 530px;
+}
+
+.carousel-contact-contact{
+  list-style-type: none;
+}
+
+
+
+
+.advantages{
+    margin-bottom: 81px;
+    text-align: center;
+}
+
+.advantages-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style-type: none ;
+}
+.advantages-item{
+    width: 570px;
+}
+
+/* Title */
+.advantages-title {
+    margin-top: 0;
+    margin-bottom: 28px;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+/* Description */
+.advantages-description {
+  margin: 0;
+}
+
+/* Item */
+.advantages-item {
+  width: 570px;
+}
+
+
+.card-product{
+  display: block;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.card-product-item{
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+.card-item-1,card-item-2,card-item-3,card-item-4{
+  font-size: 16px;
+  align-items: center;
+}
+
+.caption{
+  text-align: center;
+}
+
+
+.information{
+  display: flex;
+  padding: 56px 40px;
+  margin-top: 104px;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 16px;
+
+}
+
+.information-list{
+  display: flex;
+  list-style-type: none;
+  width: 1122px;
+}
+
+.news{
+  display: flex;
+  margin-top: 80px;
+
+}
+
+.aside{
+  background-image: url(/img/Новости.png);
+  background-repeat: no-repeat;
+  width: 570px;
+  height: 224px;
+}
+
+.aside p, h3 {
+  position: relative;
+}
+
+.subscription{
+  display: flex;
+  font-size: 16px;
+  width: 558px;
+  height: 212px;
+  margin-left: 30px;
+  border-radius: 16px;
+  background-image:url(/img/Подписка.png) ;
+  background-repeat: no-repeat;
+
+}
+
+.subscription-email{
+  width: 338px;
+  height: 48px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.btn{
+  background-color: #FF2F64;
+  border: 0 solid;
+  border-radius: 16px;
+  width: 152px;
+  height: 44px;
+  padding: auto;
+  font-size: 16px;
+
+}
+
+.section-delivery{
+display: flex;
+margin-top: 80px;
+margin-bottom: 80px;
+}
+
+.desc{
+  background-image: url(/img/Доставка.png);
+  background-repeat: no-repeat;
+  width: 1170px;
+  height: 534px;
+}
+
+.desc-title{
+  font-weight: 900;
+  font-size: 32px;
+  width: 356px;
+  height: 92px;
+  padding-top: 167px;
+  padding-left: 100px;
+}
+
+.desc-subtitle{
+  font-weight: 400;
+  font-size: 16px;
+  width: 371px;
+  height: 88px;
+  padding-top: 24px;
+  padding-left: 100px;
+}
+
+.contacts{
+  background-image: url(/img/Обратная\ связь.png);
+  background-repeat: no-repeat;
+  width: 1170px;
+  height: 492px;
+}
+
+
+
+.index-columns:last-child {
+  margin-bottom: 0;
+}
+
+
+.main-container{
+    flex-grow: 1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contacts-phone {
+    font-family: "Inter", sans-serif;
+    font-weight: Bold;
+    text-align: left;
+    color: #2D3440;
+}
+
+.index-main{
+    color: #2D3440;
+    background-color: #FEAFC3;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.first_text p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+}
+
+button {
+    background-color: #FCFCFC;
+    border: 0 solid;
+    border-radius: 26px;
+    padding: auto;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 12px 32px 12px 32px;
+}
+
+
+
+
+.page-footer{
+   list-style: none ;
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.footer-contact{
+    width: 200px;
+    margin-right: 130px;
+}
+
+.footer_block_group{
+    width: 350px;
+    margin: auto;
+}
+
+.catalog-products{
+    display: flex;
+}
+
+.catalog-filter{
+    width: 900px;
+    margin-right: 435px;
+}
+
+.catalog-menu{
+}
