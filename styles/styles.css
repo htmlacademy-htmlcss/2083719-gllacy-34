@@ -109,25 +109,24 @@ body {
   min-height: 22px;
 }
 
-.page-cotainer{
-  display: flex;
-  justify-content: space-between;
-  padding: 0 40px;
-  width: 1170px;
-  margin: 0 auto;
-}
+
 
 .ice-cream-corusel{
   display: flex;
-  margin: 0 auto;
+
   }
+
+.first_text{
+  display: flex;
+  flex-direction: column;
+}
 
 
 .heading{
   width: 470px;
-  margin-top: 136px;
-  margin-left: 70px;
-  margin-right: 21;
+  padding-top: 136px;
+  padding-left: 70px;
+  padding-right: 21px;
   font-family: 'Inter', sans-serif;
   font-weight: 900;
   font-size: 36px;
@@ -143,29 +142,45 @@ body {
   }
 
 
-.carousel{
-  display: flex;
-  margin-left: 31px;
-  margin-top: 64px;
-  width: 306px;
-  height: 507px;
-}
 
-.card-list{
-  display: block;
-  list-style-type: none;
+.carousel{
+  padding-left: 21px;
   width: 609px;
   height: 507px;
 }
 
-.image{
+.card-list{
   display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.card-carousel{
+  width:306px ;
+  padding-top: 21px;
+  padding-bottom: 26px;
+
+}
+
+.card-carousel-2{
+  width:66px ;
+  height:150px ;
+  padding-top: 204px;
+  padding-left: 79px;
+
+}
+
+.card-carousel-3{
+  width:66px ;
+  height:150px ;
+  padding-top: 204px;
+  padding-right: 17px;
 
 }
 
 .carousel-contact{
   display: flex;
-  margin-left: 200px;
+  flex-direction: row;
   margin-top: 530px;
 }
 
@@ -174,11 +189,13 @@ body {
 }
 
 
-
+/*Преимущества*/
 
 .advantages{
-    margin-bottom: 81px;
-    text-align: center;
+  width: 1170px;
+  margin-bottom: 81px;
+  text-align: center;
+
 }
 
 .advantages-list{
@@ -188,12 +205,23 @@ body {
     padding: 0;
     text-align: center;
     list-style-type: none ;
+    background-color: #FF7799;
 }
 .advantages-item{
-    width: 570px;
+  display: flex;
+  border-radius: 16px;
+  flex-direction: column;
+  width: 570px;
+  padding-left: 30px;
 }
 
-/* Title */
+.advantages-item p{
+  width: 328px;
+  font-size: 16px;
+
+}
+
+
 .advantages-title {
     margin-top: 0;
     margin-bottom: 28px;
@@ -201,18 +229,25 @@ body {
     font-size: 24px;
     line-height: 30px;
     text-transform: uppercase;
+    background-color: #FF7799;
 }
 
-/* Description */
 .advantages-description {
-  margin: 0;
 }
 
-/* Item */
-.advantages-item {
-  width: 570px;
+.malinka-darom{
+  width:219px ;
+  height: 268px;
+  margin-top: 55px;
 }
 
+.marmeshoy-darom{
+  width: 219px;
+  height: 268px;
+  margin-bottom: 81px;
+}
+
+/*Меню*/
 
 .card-product{
   display: block;
@@ -226,10 +261,7 @@ body {
   justify-content: space-around;
 }
 
-.card-item-1,card-item-2,card-item-3,card-item-4{
-  font-size: 16px;
-  align-items: center;
-}
+
 
 .caption{
   text-align: center;
@@ -388,30 +420,101 @@ button {
 
 
 .page-footer{
-   list-style: none ;
-    display: flex;
-    width: 1170px;
-    margin: 0 auto;
+list-style-type: none ;
+display: flex;
+width: 1170px;
+ margin: 0 auto;
 }
 
 .footer-contact{
-    width: 200px;
-    margin-right: 130px;
+ width: 200px;
+ margin-right: 130px;
 }
 
 .footer_block_group{
-    width: 350px;
-    margin: auto;
+  width: 350px;
+  margin: auto;
 }
 
+.footer_block{
+  display: flex;
+  list-style-type: none;
+}
+
+
+/* Страница каталога*/
+
+
+.inner-header-title{
+  width: 379px;
+  font-weight: 900;
+  font-size: 32px;
+  padding-top: 16px;
+}
+
+.breadcrums{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+
+
+
 .catalog-products{
-    display: flex;
+  display: flex;
 }
 
 .catalog-filter{
-    width: 900px;
-    margin-right: 435px;
+  width: 900px;
+  margin-right: 435px;
 }
 
+.filter-title-title{
+  display: flex;
+  list-style-type: none;
+}
+
+.select-control{
+  display: flex;
+}
+
+
 .catalog-menu{
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: center;
+  width: 1170px;
+
+}
+
+.product-card{
+  display: flex;
+
+}
+
+.pagination {
+  display: flex;
+  list-style-type: none;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.pagination-link{
+  display: block;
+  width: 11px;
+  height: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #2D3440;
+}
+
+.pagination-show-more {
+  margin-left: 582px;
+
 }
