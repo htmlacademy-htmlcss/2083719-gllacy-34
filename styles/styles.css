@@ -431,6 +431,10 @@ width: 1170px;
  margin-right: 130px;
 }
 
+.footer-contact-contact{
+  list-style-type: none;
+}
+
 .footer_block_group{
   width: 350px;
   margin: auto;
