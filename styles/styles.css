@@ -119,6 +119,7 @@ body {
 .first_text{
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 
@@ -141,7 +142,10 @@ body {
   margin-right: 77px;
   }
 
-
+.order{
+  width: 25% ;
+  text-align: center;
+}
 
 .carousel{
   padding-left: 21px;
@@ -269,19 +273,26 @@ body {
 
 
 .information{
-  display: flex;
-  padding: 56px 40px;
-  margin-top: 104px;
-  flex-direction: column;
-  text-align: center;
+  display: grid;
   border-radius: 16px;
-
 }
 
 .information-list{
   display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
   list-style-type: none;
   width: 1122px;
+  margin: 0 ;
+}
+
+.information-list li{
+  display: flex;
+  align-items: flex-start;
+  width: 40%;
+  height: 40%;
+  padding-bottom: 0;
+  gap: 16px;
 }
 
 .news{
@@ -291,7 +302,7 @@ body {
 }
 
 .aside{
-  background-image: url(/img/Новости.png);
+  background-image: url(../img/Новости.png);
   background-repeat: no-repeat;
   width: 570px;
   height: 224px;
@@ -308,7 +319,7 @@ body {
   height: 212px;
   margin-left: 30px;
   border-radius: 16px;
-  background-image:url(/img/Подписка.png) ;
+  background-image:url(../img/Подписка.png) ;
   background-repeat: no-repeat;
 
 }
@@ -330,25 +341,24 @@ body {
   font-size: 16px;
 
 }
+/*доставка любимого мороженного*/
 
 .section-delivery{
+background-image: url(../img/Доставка.png);
 display: flex;
 margin-top: 80px;
 margin-bottom: 80px;
 }
 
-.desc{
-  background-image: url(/img/Доставка.png);
-  background-repeat: no-repeat;
+.forma{
+  display: flex;
   width: 1170px;
-  height: 534px;
 }
 
 .desc-title{
   font-weight: 900;
   font-size: 32px;
   width: 356px;
-  height: 92px;
   padding-top: 167px;
   padding-left: 100px;
 }
@@ -357,13 +367,59 @@ margin-bottom: 80px;
   font-weight: 400;
   font-size: 16px;
   width: 371px;
-  height: 88px;
   padding-top: 24px;
   padding-left: 100px;
 }
 
+
+.appointment-form{
+  display: grid;
+  grid-template-columns: 117px 287px;
+  gap: 20px 16px;
+  background-color: #FCFCFC;
+  width: 500px;
+  height: 406px;
+  margin-top: 64px;
+  margin-left: 135px;
+  margin-bottom: 64px;
+}
+
+.title{
+  width: 380px;
+  height: 44px;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+.appointment-form-date{
+  display: flex;
+  margin-top: 16px;
+  grid-column: 2 / 1;
+  flex-direction: column;
+}
+
+.appointment-form-phone{
+  display: flex;
+  flex-direction: column;
+}
+
+.appointment-form-adress{
+  grid-column: 1/-1;
+}
+
+.appointment-submit{
+  grid-column: 1/-1;
+  justify-self: center;
+}
+
+
+
+/*адрес главного офиса*/
+
 .contacts{
-  background-image: url(/img/Обратная\ связь.png);
+  display: grid;
+  background-image: url(../img/Обратная\ связь.png);
   background-repeat: no-repeat;
   width: 1170px;
   height: 492px;
@@ -416,8 +472,7 @@ button {
     padding: 12px 32px 12px 32px;
 }
 
-
-
+/*футер*/
 
 .page-footer{
 list-style-type: none ;
@@ -463,10 +518,6 @@ width: 1170px;
   list-style-type: none;
 }
 
-
-
-
-
 .catalog-products{
   display: flex;
 }
@@ -485,20 +536,49 @@ width: 1170px;
   display: flex;
 }
 
+.button{
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+
 
 .catalog-menu{
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4,270px);
   list-style-type: none;
-  justify-content: center;
-  width: 1170px;
+  justify-self: center;
+  margin: 0;
+  margin-bottom: 60px;
+  padding: 0;
+  gap: 30px;
 
 }
 
-.product-card{
+.catalog-card{
+  background-color: #FCFCFC;
   display: flex;
+  flex-direction: column;
 
 }
+
+.catalog-card-content{
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 0;
+
+}
+
+.product-card-button-button{
+  display: flex;
+  padding-top: 0;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column-reverse;
+}
+
 
 .pagination {
   display: flex;
